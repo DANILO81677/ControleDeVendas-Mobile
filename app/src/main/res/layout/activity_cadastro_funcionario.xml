@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.funcionarios.activity_cadastro_funcionario">
+
+    <EditText
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_width="327dp"
+            android:hint="Nome Completo"
+            android:ems="10"
+            android:id="@+id/editTextNomeFuncionario"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.535" app:layout_constraintVertical_bias="0.067"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Celular"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editTextCelularFuncionario"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.227" app:layout_constraintVertical_bias="0.151"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:hint="Telefone Fixo"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editTextTelefoneFixoFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.227" app:layout_constraintVertical_bias="0.237"/>
+    <Button
+            android:text="Cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/buttonCadastrarWorker"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.928"/>
+    <EditText
+            android:layout_width="213dp"
+            android:layout_height="50dp"
+            android:hint="Numéro Documento"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editTextNumeroDocumentoFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.803" app:layout_constraintVertical_bias="0.33"/>
+    <Spinner
+            android:layout_width="93dp"
+            android:layout_height="47dp" android:id="@+id/spinnerTipoDocumentoFuncionario"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.141" app:layout_constraintVertical_bias="0.333"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Endereço"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextEnderecoFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.227" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.425"/>
+    <EditText
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Nùmero"
+            android:ems="10"
+            android:id="@+id/editTextNumeroCasaFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.877" app:layout_constraintVertical_bias="0.425"/>
+    <EditText
+            android:layout_width="150dp"
+            android:hint="Bairro"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextBairroFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.172"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.516"/>
+    <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Cidade"
+            android:ems="10"
+            android:id="@+id/editTextCidadeFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.85" app:layout_constraintVertical_bias="0.516"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="UF"
+            android:ems="10"
+            android:id="@+id/editTextEstadoFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.888" app:layout_constraintVertical_bias="0.603"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="CEP"
+            android:ems="10"
+            android:id="@+id/editTextCEPFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.227" app:layout_constraintVertical_bias="0.604"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Função Realizada"
+            android:id="@+id/editTextFuncaoTrabalhoFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.247" app:layout_constraintVertical_bias="0.692"/>
+    <EditText
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editTextDiaPagamentoFuncionario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.782" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.575"/>
+    <TextView
+            android:text="Dia de Pagamento:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.773"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

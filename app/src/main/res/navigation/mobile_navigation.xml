@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.myapplication.ui.gallery.GalleryFragment"
+        android:label="@string/menu_comandas"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.myapplication.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_clientes"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+            android:id="@+id/nav_tablePrices"
+            android:name="com.example.myapplication.ui.tablePrices.TablePricesFragment"
+            android:label="Tabela de Preços"
+            tools:layout="@layout/fragment_tableprices"/>
+    <fragment
+            android:id="@+id/nav_despesas"
+            android:name="com.example.myapplication.ui.despezas.DespezasFragment"
+            android:label="Despezas"
+            tools:layout="@layout/fragment_despezas"/>
+    <fragment
+            android:id="@+id/nav_funcionarios"
+            android:name="com.example.myapplication.ui.funcionarios.FuncionariosFragment"
+            android:label="Funcionarios"
+            tools:layout="@layout/fragment_funcionarios"/>
+    <fragment
+            android:id="@+id/nav_relatorios"
+            android:name="com.example.myapplication.ui.relatorios.RelatoriosFragment"
+            android:label="Relatorios"
+            tools:layout="@layout/fragment_relatorios"/>
+</navigation>

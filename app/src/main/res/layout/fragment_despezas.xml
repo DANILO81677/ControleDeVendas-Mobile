@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <Button
+            android:text="Cadastrar Nova Despesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/buttonCreateNewExpense"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintVertical_bias="0.143"/>
+    <TextView
+            android:text="Despesas Fixas Mensais:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.142" app:layout_constraintVertical_bias="0.255"/>
+    <TextView
+            android:text="Despesas Variaveis Geral :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintVertical_bias="0.623"/>
+    <TextView
+            android:text="Despesas Variaveis do mes :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintVertical_bias="0.622"/>
+    <ListView
+            android:layout_width="301dp"
+            android:layout_height="168dp"
+            android:id="@+id/listaMensalDespesa"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.381"
+            app:layout_constraintHorizontal_bias="0.327"/>
+    <ListView
+            android:layout_width="298dp"
+            android:layout_height="172dp"
+            android:id="@+id/listaUnicaDespesa"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.318"
+            android:layout_marginBottom="96dp">
+    </ListView>
+    <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewTotalDespesas"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCreateNewExpense"
+            app:layout_constraintHorizontal_bias="0.136" app:layout_constraintVertical_bias="0.506"/>
+    <ListView
+            android:layout_width="298dp"
+            android:layout_height="172dp"
+            android:id="@+id/listaUnicaDespesaGeral"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.318"
+            android:layout_marginBottom="96dp">
+    </ListView>
+    <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu_despeza_unico_list"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.568">
+
+        <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes Atual"/>
+
+        <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todos Meses"/>
+    </com.google.android.material.tabs.TabLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

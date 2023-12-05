@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.tablePrices.TablePricesFragment" >
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.41"
+            app:layout_constraintBottom_toTopOf="@+id/simpleTabLayout"/>
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/simpleTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="2dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="552dp">
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Produtos"/>
+
+        <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serviços"/>
+
+    </com.google.android.material.tabs.TabLayout>
+    <ListView
+            android:id="@+id/list2"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            app:layout_constraintBottom_toBottomOf="@+id/list1" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+    </ListView>
+    <ListView
+            android:id="@+id/list1"
+            android:layout_width="350dp"
+            android:layout_height="449dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:guidelineUseRtl="false" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/list2">
+    </ListView>
+    <Button
+            android:text="Novo Produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/buttonProduct"
+            android:layout_marginBottom="112dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.144" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/buttonService"/>
+    <Button
+            android:text="Novo Serviço"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/buttonService"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.013" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="44dp" app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

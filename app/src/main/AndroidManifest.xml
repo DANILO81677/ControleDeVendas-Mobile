@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MyApplication">
+        <activity android:name=".ui.slideshow.ListarTodasComandasCliente">
+        </activity>
+        <activity android:name=".ui.relatorios.DetalhamentoMensal">
+        </activity>
+        <activity android:name=".ui.gallery.VisualizarComanda">
+        </activity>
+        <activity android:name=".ui.funcionarios.RendimentosFuncionario">
+        </activity>
+        <activity android:name=".ui.despezas.AlterarDespesa">
+        </activity>
+        <activity
+                android:name=".ui.despezas.CriarDespesa"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity
+                android:name=".ui.funcionarios.activity_cadastro_funcionario"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity
+                android:name=".ui.tablePrices.CriarNovoServico"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity
+                android:name=".ui.funcionarios.AlterarFuncionario"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity
+                android:name=".ui.tablePrices.AlterarServico"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity
+                android:name=".ui.tablePrices.AlterarProduto"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity android:name=".ui.tablePrices.CriarNovoItem">
+        </activity>
+        <activity
+                android:name=".ui.gallery.CriarComanda"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity android:name=".ui.slideshow.VisualizarDadosCliente">
+        </activity>
+        <activity
+                android:name=".ui.slideshow.CadastroCliente"
+                android:parentActivityName=".Main2Activity">
+        </activity>
+        <activity
+                android:name=".Main2Activity"
+                android:exported="true"
+                android:label="@string/app_name"
+                android:launchMode="singleTop"
+                android:theme="@style/Theme.MyApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
